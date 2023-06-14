@@ -16,6 +16,12 @@ module.exports = {
         sans: 'var(--font-roboto)',
         alt: 'var(--font-bai-jamjuree)',
       },
+      screens: {
+        sm: { min: '475px', max: '767px' },
+        md: { min: '768px', max: '1023px' },
+        lg: { min: '1024px', max: '1279px' },
+        xl: { min: '1280px' },
+      },
       colors: {
         'eerie-black': {
           100: '#DFDCF4',

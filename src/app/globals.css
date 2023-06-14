@@ -23,7 +23,7 @@
   .content-wrapper-max {
     @apply mx-auto max-w-[120rem];
   }
-  
+
   .background-grid {
     @apply relative z-0 bg-slate-100;
     @apply dark:bg-eerie-black-500;
@@ -54,5 +54,10 @@
         mask-image: linear-gradient(black, black, transparent);
       }
     }
+  }
+
+  .button {
+    @apply inline-flex h-10 items-center justify-center gap-1.5 rounded-md border border-transparent px-4 text-center text-sm font-bold transition duration-150;
+    @apply md:rounded-xl;
   }
 }
