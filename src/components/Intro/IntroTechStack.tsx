@@ -21,7 +21,7 @@ export default function IntroTechStack() {
   return (
     <div>
       <m.p
-        className="mb-2.5 mt-36 font-mono text-sm dark:text-slate-400"
+        className="mb-2.5 mt-36 font-mono text-sm dark:text-slate-400 sm:text-center md:text-center"
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.6 }}
@@ -29,7 +29,7 @@ export default function IntroTechStack() {
         atual e mais usada stack/ferramentas:
       </m.p>
       <m.ul
-        className="flex items-center gap-3.5 text-slate-500 dark:text-slate-500"
+        className="flex items-center gap-3.5 text-slate-500 dark:text-slate-500 sm:justify-center md:justify-center"
         initial="hide"
         animate="show"
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}

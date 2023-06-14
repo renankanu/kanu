@@ -12,7 +12,7 @@ const animation = {
 export default function IntroTitle() {
   return (
     <div>
-      <span className=" dark:text-slate-300">
+      <span className="dark:text-slate-300 sm:text-center md:text-center">
         <m.span
           className="mb-4 block text-[2.5rem] font-[1000] leading-none lg:mb-6 lg:text-7xl xl:mb-6 xl:text-7xl "
           initial={animation.hide}

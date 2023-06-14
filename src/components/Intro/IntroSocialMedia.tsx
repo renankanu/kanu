@@ -29,7 +29,11 @@ function GitButton() {
 
 export default function IntroSocialMedia() {
   return (
-    <m.div className="mt-10 flex gap-2" initial="hide" animate="show">
+    <m.div
+      className="mt-10 flex gap-2 sm:flex sm:justify-center md:flex md:justify-center"
+      initial="hide"
+      animate="show"
+    >
       <m.div
         className="relative z-20"
         variants={animation}
