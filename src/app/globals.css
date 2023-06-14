@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    @apply bg-eerie-black-500;
+    @apply font-sans text-base font-normal text-white;
+  }
+  main {
+    @apply flex flex-col;
+  }
+}
+
+@layer components {
+  .content-wrapper {
+    @apply mx-auto max-w-[75rem] px-4;
+    @apply sm:px-12 md:px-10 lg:px-16 xl:px-6;
+  }
+
+  .content-wrapper-max {
+    @apply mx-auto max-w-[120rem];
+  }
+  
+  .background-grid {
+    @apply relative z-0 bg-slate-100;
+    @apply dark:bg-eerie-black-500;
+
+    &::before {
+      @apply absolute inset-0 z-[-1] content-[''] bg-grid-slate-200/80;
+      @apply dark:bg-grid-slate-50/[.025];
+
+      mask-image: linear-gradient(transparent, black, transparent);
+    }
+
+    &--fade-in {
+      @apply bg-transparent bg-gradient-to-t from-slate-100 via-slate-100;
+      @apply dark:bg-transparent dark:from-[#0c1222] dark:via-[#0c1222];
+
+      &::before {
+        @apply bg-left-bottom;
+
+        mask-image: linear-gradient(transparent, black, black);
+      }
+    }
+
+    &--fade-out {
+      @apply bg-transparent bg-gradient-to-b from-slate-100 via-slate-100;
+      @apply dark:bg-transparent dark:from-[#0c1222] dark:via-[#0c1222];
+
+      &::before {
+        mask-image: linear-gradient(black, black, transparent);
+      }
+    }
+  }
+}
