@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar'
 import FramerMotionProvider from '@/providers/FramerMotionProvider'
 import {
   Bai_Jamjuree as BaiJamjuree,
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`${roboto.variable} ${baiJamjuree.variable} ${jetBrainsMono.variable}`}
       >
         <FramerMotionProvider>
+          <Navbar />
           <main>{children}</main>
         </FramerMotionProvider>
       </body>

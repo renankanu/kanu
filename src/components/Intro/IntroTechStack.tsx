@@ -3,7 +3,9 @@ import { m } from 'framer-motion'
 
 import {
   DartIcon,
+  FirebaseIcon,
   FlutterIcon,
+  GitIcon,
   ReactIcon,
   TypeScriptIcon,
   VSCodeIcon,
@@ -26,7 +28,7 @@ export default function IntroTechStack() {
         animate={animation.show}
         transition={{ delay: 0.6 }}
       >
-        atual e mais usada stack/ferramentas:
+        Stacks e ferramentas usada atualmente:
       </m.p>
       <m.ul
         className="flex items-center gap-3.5 text-slate-500 dark:text-slate-500 sm:justify-center md:justify-center"
@@ -60,6 +62,16 @@ export default function IntroTechStack() {
         <m.li variants={animation}>
           <div className="transition duration-200 hover:text-cornflower-blue-500">
             <VSCodeIcon className="h-6 w-6" />
+          </div>
+        </m.li>
+        <m.li variants={animation}>
+          <div className="transition duration-200 hover:text-cornflower-blue-500">
+            <GitIcon className="h-6 w-6" />
+          </div>
+        </m.li>
+        <m.li variants={animation}>
+          <div className="transition duration-200 hover:text-cornflower-blue-500">
+            <FirebaseIcon className="h-6 w-6" />
           </div>
         </m.li>
       </m.ul>
