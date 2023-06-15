@@ -60,4 +60,34 @@
     @apply inline-flex h-10 items-center justify-center gap-1.5 rounded-md border border-transparent px-4 text-center text-sm font-bold transition duration-150;
     @apply md:rounded-xl;
   }
+
+  .nav-link {
+    @apply flex h-9 items-center gap-1 rounded-xl px-2 text-[13px] font-bold;
+    @apply dark:text-cornflower-blue-200 dark:font-semibold;
+
+    &:hover,
+    &[aria-expanded='true'] {
+      @apply text-cornflower-blue-500;
+      @apply dark:text-cornflower-blue-500;
+    }
+
+    &--label {
+      @apply bg-cornflower-blue-500/[0.08] rounded-full px-5;
+      @apply dark:bg-cornflower-blue-500/10;
+
+      svg {
+        @apply -mr-1;
+      }
+    }
+
+    &__separator {
+      @apply -mt-1 text-slate-800;
+      @apply dark:text-slate-300;
+    }
+
+    &--focus {
+      @apply rounded-lg bg-slate-100;
+      @apply dark:bg-slate-800/50;
+    }
+  }
 }

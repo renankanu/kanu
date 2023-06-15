@@ -1,5 +1,19 @@
 import type { ComponentProps } from 'react'
 
+export function ChevronRightIcon(props: ComponentProps<'svg'>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 8 8"
+      role="img"
+      fill="currentColor"
+      {...props}
+    >
+      <circle cx="4" cy="4" r="4" fill="#6366F1" />
+    </svg>
+  )
+}
+
 export function FlutterIcon(props: ComponentProps<'svg'>) {
   return (
     <svg

@@ -35,30 +35,30 @@ export default function IntroTechStack() {
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       >
         <m.li variants={animation}>
-          <div className="transition duration-200 hover:text-accent-label">
+          <div className="transition duration-200 hover:text-cornflower-blue-500">
             <FlutterIcon className="h-6 w-6" />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className="transition duration-200 hover:text-accent-label">
-            <ReactIcon className="h-6 w-6" />
-          </div>
-        </m.li>
-        <m.li variants={animation}>
-          <div className="transition duration-200 hover:text-accent-label">
+          <div className="transition duration-200 hover:text-cornflower-blue-500">
             <DartIcon className="h-6 w-6" />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className="transition duration-200 hover:text-accent-label">
+          <div className="transition duration-200 hover:text-cornflower-blue-500">
+            <ReactIcon className="h-6 w-6" />
+          </div>
+        </m.li>
+        <m.li variants={animation}>
+          <div className="transition duration-200 hover:text-cornflower-blue-500">
             <TypeScriptIcon className="h-6 w-6" />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className="h-3 w-[1px] bg-slate-300 dark:bg-accent-label" />
+          <div className="h-3 w-[1px] bg-slate-300 dark:bg-cornflower-blue-500" />
         </m.li>
         <m.li variants={animation}>
-          <div className="transition duration-200 hover:text-accent-label">
+          <div className="transition duration-200 hover:text-cornflower-blue-500">
             <VSCodeIcon className="h-6 w-6" />
           </div>
         </m.li>
