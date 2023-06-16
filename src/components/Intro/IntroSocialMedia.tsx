@@ -12,16 +12,26 @@ const animation = {
   },
 }
 
+function openLink(link: string) {
+  window.open(link, '_blank')
+}
+
 function LinkedinButton() {
   return (
-    <button className="button button--solid md:button--big mr-4 min-w-[128px] bg-[#0072b1] text-[#fff] hover:bg-[#006097]">
+    <button
+      className="button button--solid md:button--big mr-4 min-w-[128px] bg-[#0072b1] text-[#fff] hover:bg-[#006097]"
+      onClick={() => openLink('https://www.linkedin.com/in/renansantosbr/')}
+    >
       Linkedin
     </button>
   )
 }
 function GitButton() {
   return (
-    <button className="button button--solid md:button--big min-w-[128px] bg-[#3D3F44] text-[#fff] hover:bg-[#757575]">
+    <button
+      className="button button--solid md:button--big min-w-[128px] bg-[#3D3F44] text-[#fff] hover:bg-[#757575]"
+      onClick={() => openLink('https://github.com/renankanu')}
+    >
       GitHub
     </button>
   )

@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import FramerMotionProvider from '@/providers/FramerMotionProvider'
 import {
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <FramerMotionProvider>
           <Navbar />
           <main>{children}</main>
+          <Footer />
         </FramerMotionProvider>
       </body>
     </html>
