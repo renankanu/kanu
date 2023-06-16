@@ -3,6 +3,7 @@ import useOnScroll from '@/hooks/useOnScroll'
 import Link from 'next/link'
 import { ReactNode } from 'react'
 import NavLinkExpanded from './NavLinkExpanded'
+import NavLogo from './NavLog'
 
 export type NavLinkProps = {
   title: string
@@ -40,7 +41,8 @@ export default function Navbar() {
       <div />
       <div className="content-wrapper-max">
         <div className="relative z-50 flex h-16 items-center justify-between px-2 text-sm md:px-4">
-          <nav className="flex md:gap-2">
+          <nav className="flex">
+            <NavLogo href="/" title="Home" />
             <ul className="flex items-center md:gap-1">
               <li>
                 <NavLink title="Projetos" href="/projects" />

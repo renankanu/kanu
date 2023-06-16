@@ -3,7 +3,7 @@ import { m } from 'framer-motion'
 import Image from 'next/image'
 export default function IntroImage() {
   return (
-    <div className="flex h-[248px] w-[248px]  md:mb-20  lg:mb-20 lg:ml-12 lg:h-[480px] lg:w-[480px] xl:ml-20 xl:h-[480px] xl:w-[480px] ">
+    <div className="flex h-[248px] w-[248px]  sm:mb-20  md:mb-20 lg:ml-12 lg:h-[480px] lg:w-[480px] xl:ml-20 xl:h-[480px] xl:w-[480px] ">
       <m.div
         initial={{ opacity: 0 }}
         animate={{

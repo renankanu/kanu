@@ -10,14 +10,16 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
         sans: 'var(--font-roboto)',
         alt: 'var(--font-bai-jamjuree)',
+        mono: 'var(--font-mono)',
       },
       screens: {
-        sm: { min: '475px', max: '767px' },
+        sm: { min: '275px', max: '767px' },
         md: { min: '768px', max: '1023px' },
         lg: { min: '1024px', max: '1279px' },
         xl: { min: '1280px' },
