@@ -22,7 +22,7 @@ function NavLink({ title, href, icon = null, className }: NavLinkProps) {
 }
 
 const workLinks = [
-  { title: 'Skills', href: '/work/skills-and-tools' },
+  { title: 'Skills', href: '/skill' },
   { title: 'Educação', href: '/work/education' },
   { title: 'Experiência', href: '/work/experience' },
 ]
