@@ -1,0 +1,29 @@
+
+```js
+export default function Hello({children}) {
+  return <div class="prose">{children}</div>
+}
+```
+
+```css
+.button {
+  /* group 1 */
+  @apply inline-flex h-10 items-center justify-center gap-1.5 rounded-md border border-transparent bg-purple-600 px-4 text-center text-sm font-bold text-white transition duration-150;
+  /* group 2 */
+  @apply md:rounded-xl;
+  /* group 3 */
+  @apply dark:bg-purple-600 dark:hover:bg-purple-500;
+  /* group 4 */
+  @apply hover:bg-purple-700;
+}
+```
+
+```html {footer:false}
+<html data-accent="blue">
+  <!-- ... -->
+</html>
+```
+
+export default function Hello({children}) {
+  return <div class="prose">{children}</div>
+}
