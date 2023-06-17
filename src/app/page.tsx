@@ -1,11 +1,12 @@
+import BaseLayout from '@/components/BaseLayout'
 import FeaturedCardSection from '@/components/Card/FeaturedCardSection'
 import Intro from '@/components/Intro'
 
 export default function Home() {
   return (
-    <div>
+    <BaseLayout>
       <Intro />
       <FeaturedCardSection />
-    </div>
+    </BaseLayout>
   )
 }
