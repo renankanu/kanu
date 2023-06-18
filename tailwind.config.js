@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const svgToDataUri = require('mini-svg-data-uri')
+const colors = require('tailwindcss/colors')
 const {
   default: flattenColorPalette,
 } = require('tailwindcss/lib/util/flattenColorPalette')
@@ -25,6 +26,10 @@ module.exports = {
         xl: { min: '1280px' },
       },
       colors: {
+        divider: {
+          light: colors.slate[200],
+          dark: colors.slate[800],
+        },
         'eerie-black': {
           100: '#DFDCF4',
           200: '#C1BCE9',

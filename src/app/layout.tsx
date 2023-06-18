@@ -1,4 +1,4 @@
-import FramerMotionProvider from '@/providers/FramerMotionProvider'
+import GlobalProvider from '@/providers'
 import {
   Bai_Jamjuree as BaiJamjuree,
   JetBrains_Mono as JetBrainsMono,
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${roboto.variable} ${baiJamjuree.variable} ${jetBrainsMono.variable}`}
       >
-        <FramerMotionProvider>{children}</FramerMotionProvider>
+        <GlobalProvider>{children}</GlobalProvider>
       </body>
     </html>
   )

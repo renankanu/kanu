@@ -26,7 +26,6 @@ export default function Skill() {
               Skills & Ferramentas
             </m.span>
           </span>
-          <code className="language-html">{`<p>teste</p>`}</code>
           <div className="content-wrapper flex-shrink-0 overflow-hidden lg:overflow-visible">
             <div className="flex flex-row-reverse gap-8 xl:gap-24">
               <div
@@ -36,7 +35,7 @@ export default function Skill() {
               >
                 <Config />
               </div>
-              <div className="border-divider-light dark:border-divider-dark block border-l" />
+              <div className="block border-l border-divider-light dark:border-divider-dark" />
             </div>
           </div>
         </div>
