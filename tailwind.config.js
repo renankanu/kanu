@@ -48,28 +48,6 @@ module.exports = {
           900: '#131473',
         },
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            color: '#FFFFFF',
-            a: {
-              color: theme('colors.cornflower-blue.500'),
-              '&:hover': {
-                color: theme('colors.cornflower-blue.600'),
-              },
-            },
-            h1: {
-              color: theme('colors.white'),
-            },
-            h2: {
-              color: theme('colors.white'),
-            },
-            code: {
-              color: '#FFFFFF',
-            },
-          },
-        },
-      }),
     },
   },
   plugins: [
