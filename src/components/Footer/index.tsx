@@ -2,7 +2,7 @@ import dayjs from 'dayjs'
 
 export default function Footer() {
   return (
-    <footer className="background-grid background-grid--fade-in border-divider-light dark:border-divider-dark mt-24 pt-16 text-sm text-slate-900 dark:text-slate-200">
+    <footer className="background-grid background-grid--fade-in mt-24 border-divider-light pt-16 text-sm text-slate-900 dark:border-divider-dark dark:text-slate-200">
       <div className="content-wrapper">
         <div className="flex justify-between border-t border-[#20293A] py-6 text-sm dark:border-[#20293A] sm:flex-col sm:items-center sm:justify-center">
           <div className="font-semibold">

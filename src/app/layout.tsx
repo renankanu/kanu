@@ -2,20 +2,28 @@ import GlobalProvider from '@/providers'
 import {
   Bai_Jamjuree as BaiJamjuree,
   JetBrains_Mono as JetBrainsMono,
-  Roboto_Flex as Roboto,
+  Plus_Jakarta_Sans as PlusJakartaSans,
+  Raleway,
 } from 'next/font/google'
 import { ReactNode } from 'react'
 import './globals.css'
 
-const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
+const plusJakartaSans = PlusJakartaSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+})
 const baiJamjuree = BaiJamjuree({
   subsets: ['latin'],
   weight: '700',
-  variable: '--font-bai-jamjuree',
+  variable: '--font-alt',
 })
 const jetBrainsMono = JetBrainsMono({
   subsets: ['latin'],
   variable: '--font-mono',
+})
+const raleway = Raleway({
+  subsets: ['latin'],
+  variable: '--font-body',
 })
 
 export const metadata = {
@@ -27,7 +35,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="dark">
       <body
-        className={`${roboto.variable} ${baiJamjuree.variable} ${jetBrainsMono.variable}`}
+        className={`${plusJakartaSans.variable} ${baiJamjuree.variable} ${jetBrainsMono.variable} ${raleway.variable}`}
       >
         <GlobalProvider>{children}</GlobalProvider>
       </body>

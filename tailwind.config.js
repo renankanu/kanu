@@ -15,9 +15,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'var(--font-roboto)',
-        alt: 'var(--font-bai-jamjuree)',
+        sans: 'var(--font-sans)',
+        alt: 'var(--font-alt)',
         mono: 'var(--font-mono)',
+        body: 'var(--font-body)',
       },
       screens: {
         sm: { min: '275px', max: '767px' },
