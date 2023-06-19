@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+import nextMDX from '@next/mdx'
+import rehypePrismPlus from 'rehype-prism-plus'
 const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   reactStrictMode: true,
@@ -7,12 +9,12 @@ const nextConfig = {
   },
 }
 
-const withMDX = require('@next/mdx')({
+const withMDX = nextMDX({
   options: {
     remarkPlugins: [],
-    rehypePlugins: [],
+    rehypePlugins: [rehypePrismPlus],
     providerImportSource: '@mdx-js/react',
   },
 })
 
-module.exports = withMDX(nextConfig)
+export default withMDX(nextConfig)

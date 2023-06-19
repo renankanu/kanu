@@ -27,7 +27,8 @@ export default function Skill() {
             </m.span>
           </span>
           <div className="content-wrapper flex-shrink-0 overflow-hidden lg:overflow-visible">
-            <div className="flex flex-row-reverse gap-8 xl:gap-24">
+            <div className="flex flex-row gap-8">
+              <div className="block border-l border-divider-light dark:border-divider-dark" />
               <div
                 className="mdx-contents min-w-0 flex-1 scroll-mt-[86px]"
                 id="main-contents"
@@ -35,7 +36,6 @@ export default function Skill() {
               >
                 <Config />
               </div>
-              <div className="block border-l border-divider-light dark:border-divider-dark" />
             </div>
           </div>
         </div>

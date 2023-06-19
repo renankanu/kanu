@@ -1,8 +1,12 @@
-```bash
-npm install @dimerapp/markdown
+```js showLineNumbers
+function fancyAlert(arg) {
+  if (arg) {
+    $.facebox({ div: '#foo' })
+  }
+}
 ```
 
-```html {copy:false} {footer:false}
+```html {copy:false}
 <html data-accent="blue">
   <div>
     <h1 class="text-4xl font-bold">Hello World</h1>
@@ -11,7 +15,7 @@ npm install @dimerapp/markdown
 </html>
 ```
 
-```js {copy:false} {footer:false}
+```js showLineNumbers
 export default function Config({children}) {
   return <div class="prose">{children}</div>
 }
