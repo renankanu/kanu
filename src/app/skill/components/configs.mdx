@@ -1,41 +1,242 @@
-```js showLineNumbers
-function fancyAlert(arg) {
-  if (arg) {
-    $.facebox({ div: '#foo' })
-  }
+### Makefile que uso em alguns projetos em Flutter.
+	
+```bash showLineNumbers
+.PHONY: help f_pub_runner f_release f_clear_pod f_upgrade_version f_prod
+FULL_VERSION := $(shell (cat pubspec.yaml | grep "version" | awk '{print $$2}'))
+STRING_VERSION := $(shell (echo $(FULL_VERSION) | awk -F+ '{print $$1}'))
+NUMBER_VERSION := $(shell (echo $(FULL_VERSION) | awk -F+ '{print $$2}'))
+
+help: ## This help dialog.
+	@IFS=$$'\n' ; \
+	help_lines=(`fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//'`); \
+	for help_line in $${help_lines[@]}; do \
+		IFS=$$'#' ; \
+		help_split=($$help_line) ; \
+		help_command=`echo $${help_split[0]} | sed -e 's/^ *//' -e 's/ *$$//'` ; \
+		help_info=`echo $${help_split[2]} | sed -e 's/^ *//' -e 's/ *$$//'` ; \
+		printf "%-30s %s\n" $$help_command $$help_info ; \
+	done
+
+f_pub_runner: f_pub_get ## This is flutter pub run build_runner step.
+	@echo "⊢ Running flutter pub run build_runner ⊣"
+	@flutter pub run build_runner build --delete-conflicting-outputs
+	@echo "Done ✅"
+
+f_release: f_upgrade_version ## This is flutter release step.
+	@echo "⊢ Running flutter release ⊣"
+	@flutter "build" "apk" "--release"
+	@open "build/app/outputs/flutter-apk"
+	@echo "Done ✅"
+
+f_clear_pod: ## This is clear podfile and install step.
+	@echo "⊢ Running pod deintegrate and pod install in ios folder ⊣"
+	@cd ios && pod deintegrate && rm Podfile.lock && pod install
+	@echo "Done ✅"
+
+f_upgrade_version: ## This is upgrade number version step.
+	@echo "⊢ Running upgrade  number version ⊣"
+	@$(eval NUMBER_VERSION := $(shell (echo $(NUMBER_VERSION) + 1 | bc)))
+	@echo "New version: $(STRING_VERSION)+$(NUMBER_VERSION) ✓"
+	@sed -i '' 's/^\(version: \).*$$/\1'${STRING_VERSION}+${NUMBER_VERSION}'/' pubspec.yaml
+	@echo "Done ✅"
+
+f_prod: f_upgrade_version ## This is flutter build appbundle step.
+	@echo "⊢ Running flutter build appbundle ⊣"
+	@flutter build appbundle
+	@open "build/app/outputs/bundle/release"
+	@echo "Done ✅"
+```
+
+### Settings.json que uso no VSCode.
+
+```json showLineNumbers
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80,
+      120
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
+  },
+  "dart.flutterSdkPath": ".fvm/flutter_sdk",
+  "dart.analysisExcludedFolders": [
+    "./__brick__"
+  ],
+  "editor.unicodeHighlight.ambiguousCharacters" : false,
+  "explorer.confirmDelete" : false,
+  "search.exclude" : {
+    "**\/.fvm" : true
+  },
+  "editor.accessibilitySupport" : "off",
+  "editor.fontLigatures" : true,
+  "debug.openDebug" : "openOnDebugBreak",
+  "editor.codeActionsOnSave" : {
+    "source.organizeImports" : true,
+    "source.fixAll" : true,
+    "source.fixAll.eslint": true,
+    "source.addMissingImports": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "graphql"
+  ],
+  "python.linting.pylintArgs": ["--disable=C0111"],
+  "explorer.compactFolders" : false,
+  "cSpell.ignorePaths" : [
+    "pubspec.yaml",
+    "pubspec.lock"
+  ],
+  "dart.debugSdkLibraries" : true,
+  "editor.fontSize" : 14,
+  "cSpell.userWords" : [
+    // all words here will be always correct
+  ],
+  "cSpell.language": "pt,en",
+  "security.workspace.trust.untrustedFiles" : "open",
+  "dart.debugExternalPackageLibraries" : true,
+  "redhat.telemetry.enabled" : true,
+  "files.watcherExclude" : {
+    "**\/.fvm" : true
+  },
+  "explorer.confirmDragAndDrop" : false,
+  "files.exclude" : {
+    "**\/*.g.dart" : true
+},
+  "editor.inlineSuggest.enabled" : true,
+  "editor.fontFamily": "JetBrains Mono",
+  "terminal.integrated.env.osx" : {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.minimap.renderCharacters" : false,
+  "editor.minimap.size": "fit",
+  "workbench.startupEditor": "none",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true,
+    "dart": true
+  },
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+  "workbench.iconTheme": "symbols",
+  "workbench.editorAssociations": {
+    "*.db": "default"
+  },
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "symbols.hidesExplorerArrows": false,
+  "liveServer.settings.donotShowInfoMsg": true
 }
 ```
+### Configuração do meu zshrc.
 
-```html {copy:false}
-<html data-accent="blue">
-  <div>
-    <h1 class="text-4xl font-bold">Hello World</h1>
-    <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-  </div>
-</html>
+```shell showLineNumbers
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$PATH:/Users/renankanu/development/flutter/bin"
+export PATH="$PATH":"/Users/renankanu/development/flutter/.pub-cache/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# React Native
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+#Java
+export JAVA_HOME=/opt/homebrew/Cellar/openjdk@11/11.0.16.1/libexec/openjdk.jdk/Contents/Home
+ZSH_THEME="spaceship"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+SPACESHIP_PROMPT_ORDER=(
+  time          # Time stamps section
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  hg            # Mercurial section (hg_branch  + hg_status)
+  exec_time     # Execution time
+  line_sep      # Line break
+  vi_mode       # Vi-mode indicator
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+SPACESHIP_USER_SHOW=always
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_CHAR_SYMBOL="❯"
+SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_USER_COLOR="#6A76FB"
+
+### Added by Zinit's installer
+if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
+    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
+    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
+        print -P "%F{33} %F{34}Installation successful.%f%b" || \
+        print -P "%F{160} The clone has failed.%f%b"
+fi
+
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+zinit light-mode for \
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
+
+### End of Zinit's installer chunk
+zinit light zdharma/fast-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 ```
+### A configuração do meu gitconfig.
 
-```js showLineNumbers
-export default function Config({children}) {
-  return <div class="prose">{children}</div>
-}
-```
-
-```css
-.button {
-  /* group 1 */
-  @apply inline-flex h-10 items-center justify-center gap-1.5 rounded-md border border-transparent bg-purple-600 px-4 text-center text-sm font-bold text-white transition duration-150;
-  /* group 2 */
-  @apply md:rounded-xl;
-  /* group 3 */
-  @apply dark:bg-purple-600 dark:hover:bg-purple-500;
-  /* group 4 */
-  @apply hover:bg-purple-700;
-}
-```
-
-```html {footer:false}
-<html data-accent="blue">
-  <!-- ... -->
-</html>
+```shell showLineNumbers
+[core]
+	editor = code --wait
+[user]
+	name = renankanu
+	email = renankanu@gmail.com
+[alias]
+	c = !git add --all && git commit -m
+	s = !git status -s
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+	t = "!f() { git tag -am $1 $1; }; f"
+	amend = !git add --all && git commit --amend --no-edit
+	save = !git add --all && git commit -m 'SAVEPOINT'
+	wip = !git add --all && git commit -m "WIP"
+[push]
+	followTags = true
+[merge "ours"]
+	driver = true
 ```

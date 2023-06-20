@@ -187,4 +187,9 @@
       @apply dark:bg-slate-800;
     }
   }
+
+  .label {
+    @apply relative overflow-hidden rounded-md bg-slate-100 px-3 py-1 pb-1.5 text-[13px] font-semibold mr-2 mb-2;
+    @apply dark:bg-slate-800;
+  }
 }
