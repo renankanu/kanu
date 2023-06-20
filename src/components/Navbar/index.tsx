@@ -34,7 +34,7 @@ export default function Navbar() {
       <div
         className={`fixed inset-0 h-16 ${
           isScrolled
-            ? 'border-divider-light border-b backdrop-blur  dark:border-gray-800 dark:bg-slate-900/80'
+            ? 'border-b border-divider-light backdrop-blur  dark:border-gray-800 dark:bg-slate-900/80'
             : 'bg-transparent'
         } fm:hidden`}
       />
