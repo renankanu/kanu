@@ -6,7 +6,7 @@ type Props = DetailedHTMLProps<
 >
 export function H1({ children }: Props) {
   return (
-    <h1 className="group text-3xl font-bold">
+    <h1 className="group text-3xl font-bold text-slate-300">
       <span>{children}</span>
     </h1>
   )
@@ -14,7 +14,7 @@ export function H1({ children }: Props) {
 
 export function H2({ children }: Props) {
   return (
-    <h2 className="group text-2xl font-bold">
+    <h2 className="group text-2xl font-bold text-slate-300">
       <span>{children}</span>
     </h2>
   )
@@ -22,7 +22,7 @@ export function H2({ children }: Props) {
 
 export function H3({ children }: Props) {
   return (
-    <h3 className="group text-xl font-bold">
+    <h3 className="group text-xl font-bold text-slate-300">
       <span>{children}</span>
     </h3>
   )

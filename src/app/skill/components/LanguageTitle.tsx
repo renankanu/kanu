@@ -1,15 +1,9 @@
 import { ReactNode } from 'react'
 
-export type LanguageTitleProps = {
-  icon?: ReactNode
-  title: string
-}
-
-export default function LanguageTitle({ icon, title }: LanguageTitleProps) {
+export default function LanguageTitle({ children }: { children: ReactNode }) {
   return (
-    <div className="mb-4 flex flex-row items-center">
-      {icon}
-      <h2 className="font-alt text-3xl text-slate-400">{title}</h2>
-    </div>
+    <h2 className="flex flex-row items-center font-alt text-3xl text-slate-400 sm:text-2xl">
+      {children}
+    </h2>
   )
 }

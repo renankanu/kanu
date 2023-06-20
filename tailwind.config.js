@@ -42,7 +42,7 @@ module.exports = {
           800: '#080718',
           900: '#050414',
         },
-        'cornflower-blue': {
+        primary: {
           100: '#E0E1FE',
           200: '#C1C3FD',
           300: '#A2A4FA',

@@ -28,7 +28,7 @@ export default function Skill() {
       <div className="background-grid background-grid--fade-out pb-20 pt-36 xl:pb-28 xl:pt-52">
         <div className="content-wrapper">
           <m.p
-            className="mb-16 block font-alt leading-none dark:text-cornflower-blue-500 sm:text-3xl md:text-5xl lg:text-7xl xl:text-7xl"
+            className="mb-16 block font-alt leading-none dark:text-primary-500 sm:text-3xl md:text-5xl lg:text-7xl xl:text-7xl"
             initial={animation.hide}
             animate={animation.show}
             transition={{ delay: 0.1 }}
@@ -58,13 +58,17 @@ export default function Skill() {
             Atualmente estou trabalhando com <strong>Flutter</strong> e{' '}
             <strong>React Native</strong> no mobile.
           </p>
-          <h1 className="mb-20 mt-16 font-body text-3xl font-black text-slate-300 sm:text-xl">
+          <p className="mb-2 font-body font-medium text-slate-300 sm:text-sm">
+            Mas com certeza, o que eu mais gosto de trabalhar é com{' '}
+            <strong className="text-primary-400">Flutter</strong>.
+          </p>
+          <h1 className="mb-4 mt-16 font-body text-3xl font-black text-slate-300 sm:text-xl">
             Linguagens de Programação/Frameworks
           </h1>
-          <LanguageTitle
-            icon={<FlutterIcon className="mr-2 h-6 w-6" fill="#97A3B6" />}
-            title="Flutter"
-          />
+          <LanguageTitle>
+            <FlutterIcon className="mr-2 h-6 w-6" fill="#97A3B6" />
+            Flutter
+          </LanguageTitle>
           <Paragraph>
             Atuando com Flutter desde 2020, desenvolvimento de UI responsiva,
             integração de recursos nativos, gerenciamento de estado(
@@ -73,58 +77,59 @@ export default function Skill() {
             arquitetura limpa.
           </Paragraph>
           <Divider />
-          <LanguageTitle
-            icon={<DartIcon className="mr-2 h-6 w-6" fill="#97A3B6" />}
-            title="Dart"
-          />
+          <LanguageTitle>
+            <DartIcon className="mr-2 h-6 w-6" fill="#97A3B6" />
+            Dart
+          </LanguageTitle>
           <Paragraph>
             Desenvolvimento de aplicativos, POO, manipulação de dados, testes e
             depuração, programação assíncrona.
           </Paragraph>
           <Divider />
-          <LanguageTitle
-            icon={<ReactIcon className="mr-2 h-6 w-6" fill="#97A3B6" />}
-            title="React Native"
-          />
+          <LanguageTitle>
+            <ReactIcon className="mr-2 h-6 w-6" fill="#97A3B6" />
+            React Native
+          </LanguageTitle>
           <Paragraph>
             Atuando em alguns projetos com React Native, atuando em bugs e
             melhorias.
           </Paragraph>
           <Divider />
-          <LanguageTitle
-            icon={<JavaScriptIcon className="mr-2 h-6 w-6" fill="#97A3B6" />}
-            title="JavaScript"
-          />
+          <LanguageTitle>
+            <JavaScriptIcon className="mr-2 h-6 w-6" fill="#97A3B6" />
+            JavaScript
+          </LanguageTitle>
           <Paragraph>
             Utilizada para desenvolvimentos de novas features, correção de bugs
             em projetos <strong>React Native </strong>já existentes.
           </Paragraph>
           <Divider />
-          <LanguageTitle
-            icon={<TypeScriptIcon className="mr-2 h-6 w-6" fill="#97A3B6" />}
-            title="TypeScript"
-          />
+          <LanguageTitle>
+            <TypeScriptIcon className="mr-2 h-6 w-6" fill="#97A3B6" />
+            TypeScript
+          </LanguageTitle>
           <Paragraph>
             Conhecimento sólido na linguagem, utilização de tipagem estática,
             detecção de erros em tempo de compilação, melhoria da escalabilidade
             e manutenibilidade de projetos <strong>React Native</strong>.
           </Paragraph>
           <Divider />
-          <LanguageTitle
-            icon={<PlusIcon className="mr-2 h-6 w-6" fill="#97A3B6" />}
-            title="Outras Linguagens/Frameworks"
-          />
+          <LanguageTitle>
+            <PlusIcon className="mr-2 h-6 w-6" fill="#97A3B6" />
+            Outras Linguagens/Frameworks
+          </LanguageTitle>
           <Paragraph>Também tenho conhecimento em:</Paragraph>
           <div className="flex flex-row flex-wrap">
             <span className="label">Java</span>
             <span className="label">Kotlin</span>
             <span className="label">PHP</span>
-            <span className="label">NodeJS</span>
-            <span className="label">NextJs</span>
-            <span className="label">ReactJs</span>
+            <span className="label">GitActions</span>
+            <span className="label">Firebase</span>
+            <span className="label">Docker</span>
+            <span className="label">MySql</span>
             <span className="label">AWS</span>
           </div>
-          <h1 className="mb-20 mt-16 font-body text-3xl font-black text-slate-300 sm:text-xl">
+          <h1 className="mb-4 mt-16 font-body text-3xl font-black text-slate-300 sm:text-xl">
             Ferramentas
           </h1>
           <div className="flex flex-row flex-wrap">
@@ -139,7 +144,7 @@ export default function Skill() {
             <span className="label">Figma</span>
           </div>
           <Divider />
-          <h1 className="mb-20 mt-16 font-body text-3xl font-black text-slate-300 sm:text-xl">
+          <h1 className="mb-4 mt-16 font-body text-3xl font-black text-slate-300 sm:text-xl">
             Config
           </h1>
           <Paragraph>
