@@ -24,7 +24,7 @@ function NavLink({ title, href, icon = null, className }: NavLinkProps) {
 const workLinks = [
   { title: 'Skills', href: '/skill' },
   { title: 'Educação', href: '/work/education' },
-  { title: 'Experiência', href: '/work/experience' },
+  { title: 'Experiência', href: '/experience' },
 ]
 
 export default function Navbar() {
