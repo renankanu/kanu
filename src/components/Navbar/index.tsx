@@ -24,13 +24,13 @@ function NavLink({ title, href, icon = null, className }: NavLinkProps) {
 const workLinks = [
   { title: 'Skills', href: '/skill' },
   { title: 'Educação', href: '/work/education' },
-  { title: 'Experiência', href: '/work/experience' },
+  { title: 'Experiência', href: '/experience' },
 ]
 
 export default function Navbar() {
   const isScrolled = useOnScroll(0)
   return (
-    <header className="fm:absolute fixed left-0 right-0 top-0 z-[1000]">
+    <header className="fixed left-0 right-0 top-0 z-[1000] fm:absolute">
       <div
         className={`fixed inset-0 h-16 ${
           isScrolled
@@ -40,7 +40,7 @@ export default function Navbar() {
       />
       <div />
       <div className="content-wrapper-max">
-        <div className="relative z-50 flex h-16 items-center justify-between px-2 text-sm md:px-4">
+        <div className="relative z-50 flex h-16 items-center justify-between px-4 text-sm sm:px-2">
           <nav className="flex">
             <NavLogo href="/" title="Home" />
             <ul className="flex items-center md:gap-1">

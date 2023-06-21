@@ -8,8 +8,8 @@ function Logo({ active = false }: LogoProps) {
       <div
         className={`border-box flex h-8 w-8 items-center justify-center rounded-lg border ${
           active === true
-            ? 'border-cornflower-blue-500 bg-cornflower-blue-500 dark:border-cornflower-blue-500 dark:bg-cornflower-blue-500'
-            : 'border-cornflower-blue-500 dark:border-cornflower-blue-500'
+            ? 'border-primary-500 bg-primary-500 dark:border-primary-500 dark:bg-primary-500'
+            : 'border-primary-500 dark:border-primary-500'
         }`}
       >
         RK;
