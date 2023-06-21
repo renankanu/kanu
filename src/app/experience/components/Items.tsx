@@ -32,9 +32,7 @@ export default function Items({
         </div>
       </div>
       <div className="items-stretch border border-divider-dark" />
-      <div className="flex min-w-0 flex-1 flex-col gap-16 py-8 md:gap-0 md:py-4">
-        {children}
-      </div>
+      <div className="flex min-w-0 flex-1 flex-col py-8">{children}</div>
     </div>
   )
 }

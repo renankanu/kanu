@@ -25,7 +25,7 @@ const animation = {
 export default function Skill() {
   return (
     <BaseLayout>
-      <div className="background-grid background-grid--fade-out pb-20 pt-36 xl:pb-28 xl:pt-52">
+      <div className="background-grid background-grid--fade-out pb-20 pt-36">
         <div className="content-wrapper">
           <m.p
             className="mb-16 block font-alt leading-none dark:text-primary-500 sm:text-3xl md:text-5xl lg:text-7xl xl:text-7xl"
