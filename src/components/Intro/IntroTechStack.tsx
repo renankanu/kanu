@@ -2,13 +2,13 @@
 import { m } from 'framer-motion'
 
 import {
-    DartIcon,
-    FirebaseIcon,
-    FlutterIcon,
-    GitIcon,
-    ReactIcon,
-    TypeScriptIcon,
-    VSCodeIcon,
+  DartIcon,
+  FirebaseIcon,
+  FlutterIcon,
+  GitIcon,
+  ReactIcon,
+  TypeScriptIcon,
+  VSCodeIcon,
 } from '@/components/Icons'
 
 const animation = {
@@ -37,40 +37,40 @@ export default function IntroTechStack() {
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       >
         <m.li variants={animation}>
-          <div className="hover:text-primary-500 transition duration-200">
+          <div className="transition duration-200 hover:text-primary-500">
             <FlutterIcon className="h-6 w-6" />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className="hover:text-primary-500 transition duration-200">
+          <div className="transition duration-200 hover:text-primary-500">
             <DartIcon className="h-6 w-6" />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className="hover:text-primary-500 transition duration-200">
+          <div className="transition duration-200 hover:text-primary-500">
             <ReactIcon className="h-6 w-6" />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className="hover:text-primary-500 transition duration-200">
+          <div className="transition duration-200 hover:text-primary-500">
             <TypeScriptIcon className="h-6 w-6" />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className="dark:bg-primary-500 h-3 w-[1px] bg-slate-300" />
+          <div className="h-3 w-[1px] bg-slate-300 dark:bg-primary-500" />
         </m.li>
         <m.li variants={animation}>
-          <div className="hover:text-primary-500 transition duration-200">
+          <div className="transition duration-200 hover:text-primary-500">
             <VSCodeIcon className="h-6 w-6" />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className="hover:text-primary-500 transition duration-200">
+          <div className="transition duration-200 hover:text-primary-500">
             <GitIcon className="h-6 w-6" />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className="hover:text-primary-500 transition duration-200">
+          <div className="transition duration-200 hover:text-primary-500">
             <FirebaseIcon className="h-6 w-6" />
           </div>
         </m.li>
