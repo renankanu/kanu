@@ -38,7 +38,7 @@
 
     &--fade-in {
       @apply bg-transparent bg-gradient-to-t from-slate-100 via-slate-100;
-      @apply dark:bg-transparent dark:from-[#0c1222] dark:via-[#0c1222];
+      @apply dark:bg-transparent dark:from-[#18162B] dark:via-[#18162B];
 
       &::before {
         @apply bg-left-bottom;
@@ -49,7 +49,7 @@
 
     &--fade-out {
       @apply bg-transparent bg-gradient-to-b from-slate-100 via-slate-100;
-      @apply dark:bg-transparent dark:from-[#0c1222] dark:via-[#0c1222];
+      @apply dark:bg-transparent dark:from-[#18162B] dark:via-[#18162B];
 
       &::before {
         mask-image: linear-gradient(black, black, transparent);
