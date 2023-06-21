@@ -2,10 +2,10 @@ import { PropsWithChildren } from 'react'
 
 export default function Item({ children = null }: PropsWithChildren) {
   return (
-    <article className="md:pb-16">
-      <div className="pointer-events-none sticky top-[86px] -ml-8 pb-12 fm:relative fm:top-0 md:-ml-12 lg:-ml-24">
-        <div className="absolute -ml-0.5 mt-2.5 h-4 w-4 rounded-full border-2 border-slate-700 bg-white dark:border-slate-300 dark:bg-slate-900 md:-ml-3 md:mt-2 md:h-5 md:w-5" />
-        <div className="absolute z-[-1] -ml-2 mt-4 w-8 border border-slate-700 dark:border-slate-300 md:-ml-4 md:w-10 lg:w-12" />
+    <article>
+      <div className="sticky pb-12 fm:relative sm:-ml-[1.9rem] md:-ml-14 lg:-ml-[5.6rem] xl:-ml-[5.6rem]">
+        <div className="absolute -ml-0.5 mt-2.5 h-5 w-5 rounded-full border-2 border-slate-300 bg-slate-900 sm:h-4 sm:w-4" />
+        <div className="absolute z-[-1] -ml-2 mt-[18px] w-14 border border-slate-300 sm:mt-4 sm:w-8 md:-ml-4" />
       </div>
       <div className="-mt-12">{children}</div>
     </article>

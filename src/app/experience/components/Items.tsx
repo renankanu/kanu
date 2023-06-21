@@ -1,4 +1,5 @@
 import dayjs from 'dayjs'
+import 'dayjs/locale/pt-br'
 import { PropsWithChildren, ReactElement } from 'react'
 import Item from './Item'
 
@@ -9,7 +10,7 @@ interface ItemsProps {
 
 const formatDate = (date: string) => {
   if (dayjs(date).isValid()) {
-    return dayjs(date, 'YYYY-MM-DD').format('MMMM D, YYYY')
+    return dayjs(date, 'YYYY-MM-DD').locale('pt-br').format('MMMM [de] YYYY')
   }
 
   return date
@@ -20,20 +21,11 @@ export default function Items({
   children,
 }: PropsWithChildren<ItemsProps>) {
   return (
-    <div className="flex flex-row gap-6 md:gap-12 lg:gap-24">
+    <div className="flex flex-row gap-6 md:gap-12 lg:gap-20 xl:gap-20">
       <div className="sm:hidden md:block md:pb-24">
-        <div className="mt-4 pt-1.5 fm:relative fm:top-0 md:sticky md:top-[86px]">
-          <div className="font-mono font-bold text-slate-700 dark:text-slate-300 md:text-right">
-            <time
-              className="sm:block md:block lg:hidden xl:hidden"
-              dateTime={date}
-            >
-              {date}
-            </time>
-            <time
-              className="sm:hidden md:hidden lg:block xl:block"
-              dateTime={date}
-            >
+        <div className="mt-8 pt-1.5">
+          <div className="font-mono font-bold text-slate-300">
+            <time className="block sm:hidden" dateTime={date}>
               {formatDate(date)}
             </time>
           </div>
