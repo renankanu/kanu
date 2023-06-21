@@ -22,7 +22,7 @@ export default function Items({
 }: PropsWithChildren<ItemsProps>) {
   return (
     <div className="flex flex-row gap-6 md:gap-12 lg:gap-20 xl:gap-20">
-      <div className="sm:hidden md:block md:pb-24">
+      <div className="w-40 sm:hidden md:pb-24">
         <div className="mt-8 pt-1.5">
           <div className="font-mono font-bold text-slate-300">
             <time className="block sm:hidden" dateTime={date}>
