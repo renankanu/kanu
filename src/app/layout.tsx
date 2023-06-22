@@ -29,13 +29,15 @@ const raleway = Raleway({
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className="dark">
+    <>
       <Head />
-      <body
-        className={`${plusJakartaSans.variable} ${baiJamjuree.variable} ${jetBrainsMono.variable} ${raleway.variable}`}
-      >
-        <GlobalProvider>{children}</GlobalProvider>
-      </body>
-    </html>
+      <html lang="en" className="dark">
+        <body
+          className={`${plusJakartaSans.variable} ${baiJamjuree.variable} ${jetBrainsMono.variable} ${raleway.variable}`}
+        >
+          <GlobalProvider>{children}</GlobalProvider>
+        </body>
+      </html>
+    </>
   )
 }
