@@ -14,7 +14,7 @@ function Head() {
       <link rel="icon" href="/favicon.ico" />
 
       {/* seo */}
-      <link rel="canonical" href="https://kanu-beta.vercel.app" />
+      <link rel="canonical" href="https://kanu-beta.vercel.app/" />
 
       {/* og image */}
       <meta property="og:image" content={ogImage} />
