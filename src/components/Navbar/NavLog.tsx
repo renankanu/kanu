@@ -14,7 +14,7 @@ export default function NavLogo({ href, title }: NavLogoProps) {
   return (
     <Link
       href={href}
-      className="flex h-9 items-center gap-2 rounded-xl px-2"
+      className="flex h-9 items-center gap-2 rounded-xl px-2 sm:hidden"
       aria-label={title}
     >
       <Logo active={isActive} />
