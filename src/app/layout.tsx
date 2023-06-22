@@ -31,6 +31,11 @@ export const metadata: Metadata = {
   title: 'RenanKanu;',
   description:
     'Portfólio de Renan Santos com seus projetos, trabalhos e experiências. Navegue pelo site e conheça mais sobre o desenvolvedor.',
+  alternates: { canonical: 'https://kanu-beta.vercel.app/' },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
@@ -38,6 +43,7 @@ export const metadata: Metadata = {
     title: 'RenanKanu;',
     description:
       'Portfólio de Renan Santos com seus projetos, trabalhos e experiências. Navegue pelo site e conheça mais sobre o desenvolvedor.',
+    siteName: 'RenanKanu;',
     images: [
       {
         url: 'https://kanu-beta.vercel.app/assets/kanu_purple.png',
