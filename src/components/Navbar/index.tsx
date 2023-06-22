@@ -23,8 +23,8 @@ function NavLink({ title, href, icon = null, className }: NavLinkProps) {
 
 const workLinks = [
   { title: 'Skills', href: '/skill' },
+  { title: 'Configuração', href: '/config' },
   { title: 'Experiência', href: '/experience' },
-  { title: 'Contato', href: '/contact' },
 ]
 
 export default function Navbar() {

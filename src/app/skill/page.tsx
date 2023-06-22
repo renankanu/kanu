@@ -12,7 +12,6 @@ import {
 import Paragraph from '@/components/Paragraph'
 import { m } from 'framer-motion'
 import LanguageTitle from './components/LanguageTitle'
-import Config from './components/configs.mdx'
 
 const animation = {
   hide: { x: -32, opacity: 0 },
@@ -142,27 +141,6 @@ export default function Skill() {
             <span className="label">Google Play</span>
             <span className="label">App Store</span>
             <span className="label">Figma</span>
-          </div>
-          <Divider />
-          <h1 className="mb-4 mt-16 font-body text-3xl font-black text-slate-300 sm:text-xl">
-            Config
-          </h1>
-          <Paragraph>
-            Aqui está algumas das minhas configurações, que me ajudam no
-            desenvolvimento no dia a dia.
-          </Paragraph>
-          <Divider />
-          <div className="mt-6 flex-shrink-0 overflow-hidden lg:overflow-visible">
-            <div className="flex flex-row gap-8">
-              <div className="block border-l border-divider-light dark:border-divider-dark sm:hidden" />
-              <div
-                className="mdx-contents min-w-0 flex-1 scroll-mt-[86px]"
-                id="main-contents"
-                data-ss-wrapper
-              >
-                <Config />
-              </div>
-            </div>
           </div>
         </div>
       </div>
