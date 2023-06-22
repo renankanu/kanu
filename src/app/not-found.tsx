@@ -11,17 +11,20 @@ function Error404() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="noindex" />
       </Head>
-      <div className="background-grid flex h-full items-center justify-center">
+      <div className="flex min-h-screen flex-col items-center justify-center">
         <div className="content-wrapper text-center text-slate-600 dark:text-slate-400">
           <h1 className="py-12 text-center">
+            <div className="mb-32 text-[10rem] font-extrabold sm:mb-20 sm:text-8xl">
+              Oppps!
+            </div>
             <div className="mb-3 text-8xl font-extrabold">404</div>
-            <div className="text-2xl"> Page Not Found </div>
+            <div className="text-2xl">Pagina não encontrada</div>
           </h1>
           <Link
             href="/"
-            className="text-accent-600 dark:text-accent-400 rounded-xl px-4 py-2 text-xl"
+            className="rounded-xl bg-primary-500 px-4 py-2 font-sans text-xl font-semibold text-slate-50"
           >
-            back to homepage
+            Voltar
           </Link>
         </div>
       </div>
