@@ -31,17 +31,6 @@ module.exports = {
           light: colors.slate[200],
           dark: colors.slate[800],
         },
-        'base-bg': {
-          100: '#DFDCF4',
-          200: '#C1BCE9',
-          300: '#8D87BF',
-          400: '#55507F',
-          500: '#1F2331',
-          600: '#111024',
-          700: '#0C0B1E',
-          800: '#080718',
-          900: '#050414',
-        },
         primary: {
           100: '#E0E1FE',
           200: '#C1C3FD',
