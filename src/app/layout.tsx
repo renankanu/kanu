@@ -27,11 +27,6 @@ const raleway = Raleway({
   variable: '--font-body',
 })
 
-export const metadata = {
-  title: 'RenanKanu;',
-  description: 'Renan Kanu is a software engineer based in Brazil.',
-}
-
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="dark">
