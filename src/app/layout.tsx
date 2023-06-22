@@ -28,8 +28,25 @@ const raleway = Raleway({
 })
 
 export const metadata: Metadata = {
-  title: 'Renan Kanu',
-  description: 'Renan Kanu is a software engineer based in Brazil.',
+  title: 'RenanKanu;',
+  description:
+    'Portfólio de Renan Santos com seus projetos, trabalhos e experiências. Navegue pelo site e conheça mais sobre o desenvolvedor.',
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: 'https://kanu-beta.vercel.app/',
+    title: 'RenanKanu;',
+    description:
+      'Portfólio de Renan Santos com seus projetos, trabalhos e experiências. Navegue pelo site e conheça mais sobre o desenvolvedor.',
+    images: [
+      {
+        url: 'https://kanu-beta.vercel.app/assets/kanu_purple.png',
+        width: 630,
+        height: 630,
+        alt: 'Renan Kanu',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
