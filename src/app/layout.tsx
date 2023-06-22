@@ -1,5 +1,5 @@
-import Head from '@/components/meta/Head'
 import GlobalProvider from '@/providers'
+import { Metadata } from 'next'
 import {
   Bai_Jamjuree as BaiJamjuree,
   JetBrains_Mono as JetBrainsMono,
@@ -27,10 +27,14 @@ const raleway = Raleway({
   variable: '--font-body',
 })
 
+export const metadata: Metadata = {
+  title: 'Renan Kanu',
+  description: 'Renan Kanu is a software engineer based in Brazil.',
+}
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Head />
       <html lang="en" className="dark">
         <body
           className={`${plusJakartaSans.variable} ${baiJamjuree.variable} ${jetBrainsMono.variable} ${raleway.variable}`}
