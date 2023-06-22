@@ -1,3 +1,4 @@
+import Head from '@/components/meta/Head'
 import GlobalProvider from '@/providers'
 import {
   Bai_Jamjuree as BaiJamjuree,
@@ -34,6 +35,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="dark">
+      <Head />
       <body
         className={`${plusJakartaSans.variable} ${baiJamjuree.variable} ${jetBrainsMono.variable} ${raleway.variable}`}
       >
