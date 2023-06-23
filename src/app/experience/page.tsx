@@ -109,10 +109,10 @@ export default function Experience() {
             <Item>
               <Title>Udemy</Title>
             </Item>
-            <Paragraph>
-              - Flutter utilizando TDD; \n- Clean Architecture; \n- Design
-              Patterns; \n- SOLID
-            </Paragraph>
+            <Paragraph>- Flutter utilizando TDD</Paragraph>
+            <Paragraph>- Clean Architecture</Paragraph>
+            <Paragraph>- Design Patterns</Paragraph>
+            <Paragraph>- SOLID</Paragraph>
           </Items>
         </div>
       </div>
