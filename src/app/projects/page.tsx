@@ -87,7 +87,7 @@ export default function Projects() {
               title="Portfólio modo game"
               icon={<GameControlIcon className="my-2 h-24 w-24" />}
               description="Meu portfólio em formato de jogo, com o objetivo de mostrar minhas habilidades de desenvolvimento de jogos. Feito com Flutter e Bonfire."
-              externalUrl="https://renankanu.github.io/portfolio-game/"
+              externalUrl="https://me-landing-page-renankanu.vercel.app/"
             />
           </div>
         </div>
