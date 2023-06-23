@@ -84,9 +84,9 @@ export default function Projects() {
               googleUrl="https://play.google.com/store/apps/details?id=br.com.renankanu.moti_mente"
             />
             <CardProject
-              title="Portfólio modo game"
+              title="Portfólio game mode"
               icon={<GameControlIcon className="my-2 h-24 w-24" />}
-              description="Meu portfólio em formato de jogo, com o objetivo de mostrar minhas habilidades de desenvolvimento de jogos. Feito com Flutter e Bonfire."
+              description="Esse é um jogo onde mostra minha trajetória, um portfólio onde vc pode jogar e conhecer um pouco mais sobre mim de uma forma divertida. O jogo foi desenvolvido com Flutter e Bonfire, uma engine de jogos para Flutter."
               externalUrl="https://me-landing-page-renankanu.vercel.app/"
             />
           </div>
