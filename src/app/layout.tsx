@@ -1,5 +1,4 @@
 import GlobalProvider from '@/providers'
-import { Metadata } from 'next'
 import {
   Bai_Jamjuree as BaiJamjuree,
   JetBrains_Mono as JetBrainsMono,
@@ -27,31 +26,36 @@ const raleway = Raleway({
   variable: '--font-body',
 })
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'RenanKanu;',
   description:
     'Portfólio de Renan Santos com seus projetos, trabalhos e experiências. Navegue pelo site e conheça mais sobre o desenvolvedor.',
-  alternates: { canonical: 'https://www.renankanu.com.br' },
-  icons: {
+  alternates: {
+    canonical: 'https://www.renankanu.com.br',
+  },
+  category: 'technology',
+  colorScheme: 'dark',
+  keywords: ['renan', 'kanu', 'renankanu', 'renan kanu', 'flutter', 'dart'],
+  creator: 'Renan Santos de Oliveira',
+  publisher: 'Renan Santos de Oliveira',
+  icon: {
     icon: '/favicon.ico',
-    apple: '/favicon.ico',
   },
   openGraph: {
-    type: 'website',
-    locale: 'pt_BR',
-    url: 'https://www.renankanu.com.br',
     title: 'RenanKanu;',
     description:
       'Portfólio de Renan Santos com seus projetos, trabalhos e experiências. Navegue pelo site e conheça mais sobre o desenvolvedor.',
-    siteName: 'RenanKanu;',
+    url: 'https://www.renankanu.com.br',
+    siteName: 'Next.js',
     images: [
       {
         url: 'https://www.renankanu.com.br/assets/kanu_purple.png',
-        width: 630,
-        height: 630,
-        alt: 'Renan Kanu',
+        width: 600,
+        height: 600,
       },
     ],
+    locale: 'pt_BR',
+    type: 'website',
   },
 }
 
