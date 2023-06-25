@@ -32,7 +32,9 @@ export default function CardProject({
           {googleUrl && (
             <a
               href={googleUrl}
+              target="_blank"
               className="inline-flex items-center rounded-lg bg-primary-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-primary-700 focus:outline-none  focus:ring-4 focus:ring-primary-800"
+              rel="noreferrer"
             >
               <GooglePlayIcon className="mr-3 h-8 w-8" />
               <span className="w-full">Google Play</span>
@@ -41,7 +43,9 @@ export default function CardProject({
           {appleUrl && (
             <a
               href={appleUrl}
+              target="_blank"
               className="inline-flex items-center rounded-lg bg-primary-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-primary-700 focus:outline-none  focus:ring-4 focus:ring-primary-800"
+              rel="noreferrer"
             >
               <svg
                 className="mr-3 h-6 w-6"
@@ -61,8 +65,10 @@ export default function CardProject({
         </div>
         {externalUrl && (
           <a
+            target="_blank"
             href={externalUrl}
             className="inline-flex items-center rounded-lg bg-primary-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-primary-700 focus:outline-none  focus:ring-4 focus:ring-primary-800"
+            rel="noreferrer"
           >
             Ver mais
             <svg
