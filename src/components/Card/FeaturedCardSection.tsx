@@ -33,9 +33,6 @@ export default function FeaturedCardSection() {
         />
         <FeaturedCard
           icon={
-            // <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#43589C] text-[18px]">
-            //   🔄
-            // </div>
             <Image
               className="flex h-10 w-10 items-center justify-center rounded-full bg-[#43589C] p-2"
               src="assets/ic_category.svg"

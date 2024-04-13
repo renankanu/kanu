@@ -1,4 +1,5 @@
 import dayjs from 'dayjs'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -8,8 +9,16 @@ export default function Footer() {
           <div className="font-semibold">
             &copy;Copyright {dayjs().format('YYYY')}, Renan Santos de Oliveira
           </div>
-          <div className="text-slate-500 dark:text-slate-400 sm:mt-4">
-            <span>📪 &nbsp; renankanu@gmail.com</span>
+          <div className="flex text-slate-500 dark:text-slate-400 sm:mt-4">
+            <Image
+              src="/assets/ic_mail.svg"
+              alt="Gmail icon"
+              width={16}
+              height={16}
+            />
+            <span className="font-semibold text-white">
+              &nbsp; renankanu@gmail.com
+            </span>
           </div>
         </div>
       </div>
