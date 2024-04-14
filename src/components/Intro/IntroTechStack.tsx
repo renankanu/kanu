@@ -23,7 +23,7 @@ export default function IntroTechStack() {
   return (
     <div>
       <m.p
-        className="mb-2.5 mt-36 font-mono text-sm dark:text-slate-400 sm:text-center md:text-center"
+        className="mb-2.5 mt-16 font-mono text-sm dark:text-slate-400 sm:text-center md:text-center"
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.6 }}
