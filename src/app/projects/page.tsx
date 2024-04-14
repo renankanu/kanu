@@ -70,18 +70,30 @@ export default function Projects() {
           </div>
 
           <Divider />
+          <div className="mt-8">
+            <m.p
+              className="mb-8 block font-alt leading-none text-gray-500"
+              initial={animation.hide}
+              animate={animation.show}
+              transition={{ delay: 0.3 }}
+            >
+              Quero destacar esses projetos abaixo
+            </m.p>
+          </div>
           <div className="flex flex-row flex-wrap gap-x-8 sm:justify-center md:justify-center">
             <CardProject
               title="KIDSKA"
               icon={<KidsKaIcon className="my-2 h-24 w-24" />}
-              description="Um APP para ajudar crianças a aprenderem de forma divertida com sons sobre o alfabeto, números, cores e alguns sons de animais. O APP também tem histórias infantis em áudio. Disponível para Android e em breve para iOS."
-              googleUrl="https://play.google.com/store/apps/details?id=br.com.renankanu.app_kidska"
+              description="Um APP para ajudar crianças a aprenderem de forma divertida com sons sobre o alfabeto, números, cores e alguns sons de animais. O APP também tem histórias infantis em áudio."
+              // googleUrl="https://play.google.com/store/apps/details?id=br.com.renankanu.app_kidska"
+              externalUrl="https://github.com/renankanu/app_kidska"
             />
             <CardProject
               title="Motivamente"
               icon={<MotivaIcon className="my-2 h-24 w-24" />}
-              description="Um APP de frases motivacionais, com o objetivo de ajudar as pessoas a se sentirem melhor e mais motivadas. O APP gera frases aleatórias e também permite que o usuário compartilhe as frases. Disponível para Android e em breve para iOS."
-              googleUrl="https://play.google.com/store/apps/details?id=br.com.renankanu.moti_mente"
+              description="Um APP de frases motivacionais, com o objetivo de ajudar as pessoas a se sentirem melhor e mais motivadas. O APP gera frases aleatórias e também permite que o usuário compartilhe as frases."
+              // googleUrl="https://play.google.com/store/apps/details?id=br.com.renankanu.moti_mente"
+              externalUrl="https://github.com/renankanu/app_motivamente"
             />
             <CardProject
               title="Portfólio game mode"

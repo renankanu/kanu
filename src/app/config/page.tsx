@@ -26,7 +26,7 @@ export default function Configuration() {
             Configurações
           </m.p>
           <m.p
-            className="mb-8 block font-body text-xl font-bold leading-relaxed text-slate-300 sm:text-sm"
+            className="mb-8 block font-body text-xl font-medium leading-relaxed text-slate-300 sm:text-sm"
             initial={animation.hide}
             animate={animation.show}
             transition={{ delay: 0.2 }}
