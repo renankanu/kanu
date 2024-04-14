@@ -69,11 +69,17 @@ export default function Skill() {
             Flutter
           </LanguageTitle>
           <Paragraph>
-            Atuando com Flutter desde 2020, desenvolvimento de UI responsiva,
-            integração de recursos nativos, gerenciamento de estado(
-            <strong>Bloc</strong>, <strong>GetX</strong>), conexão com APIs,
-            testes e depuração, publicação de aplicativos, testes unitários e
-            arquitetura limpa.
+            Atuando com Flutter desde o final de 2019, desenvolvendo aplicativos
+            para Android e iOS, utilizando as melhores práticas de codificação,
+            arquitetura limpa, código limpo e testes unitários. Integração
+            nativas com platform channels, utilizando varios serviços do
+            Firebase, CI/CD. Utilizando BLoC, GetX e Riverpod para gerenciamento
+            de estado. Desenvolvimento o padrão de microfrontends, aproveitando
+            a escalabilidade e manutenibilidade de projetos, utilizando
+            arquiteturas como MVVM, MVC e Clean Architecture para melhorar a
+            qualidade do código. Integração com APIs RESTful utilizando Dio. E
+            posso ter esquecido de mencionar algo, mas estou sempre aprendendo e
+            melhorando.
           </Paragraph>
           <Divider />
           <LanguageTitle>
@@ -81,8 +87,22 @@ export default function Skill() {
             Dart
           </LanguageTitle>
           <Paragraph>
-            Desenvolvimento de aplicativos, POO, manipulação de dados, testes e
-            depuração, programação assíncrona.
+            Tentando sempre aplicar as novidades da linguagem em meus projetos,
+            e melhorar a qualidade do código, utilizando tipagem estática,
+            detecção de erros em tempo de compilação, melhoria da escalabilidade
+            e da manutenibilidade de projetos Flutter. Além disso com o Dart, já
+            criei algumas APIs RESTful utilizando o framework Shelf, o link para
+            o repositório{' '}
+            <a
+              className="text-primary-400"
+              target="_blank"
+              href="https://github.com/renankanu/kn_fit_api"
+              rel="noreferrer"
+            >
+              aqui!
+            </a>
+            , e também criei um CLI para facilitar a criação de novos projetos
+            com uma estrutura padrão, definida pela empresa que trabalho.
           </Paragraph>
           <Divider />
           <LanguageTitle>
@@ -90,8 +110,13 @@ export default function Skill() {
             React Native
           </LanguageTitle>
           <Paragraph>
-            Atuando em alguns projetos com React Native, atuando em bugs e
-            melhorias.
+            Com esse framework, já atuei em projetos criado do zero, tanto com
+            JavaScript quanto com TypeScript, utilizando Redux, Redux Saga,
+            Context API e Hooks para gerenciamento de estado. Além disso, já
+            trabalhei na manutenção de projetos já existentes, correção de bugs,
+            implementação de novas features, integração com APIs RESTful. Hoje
+            estou focando mais em Flutter, mas sempre que possível estou
+            estudando e melhorando meus conhecimentos em React Native.
           </Paragraph>
           <Divider />
           <LanguageTitle>
@@ -108,9 +133,20 @@ export default function Skill() {
             TypeScript
           </LanguageTitle>
           <Paragraph>
-            Conhecimento sólido na linguagem, utilização de tipagem estática,
-            detecção de erros em tempo de compilação, melhoria da escalabilidade
-            e manutenibilidade de projetos <strong>React Native</strong>.
+            A maior experiência com TypeScript foi em projetos{' '}
+            <strong>React Native</strong>, escolhido pela tipagem estática, que
+            ajuda a identificar erros em tempo de compilação, melhorando a
+            escalabilidade e a manutenibilidade de projetos. Além disso, já
+            criei uma API com Node.js, utilizando TypeScript, o link para o
+            repositório{' '}
+            <a
+              className="text-primary-400"
+              target="_blank"
+              href="https://github.com/renankanu/passin-api"
+              rel="noreferrer"
+            >
+              aqui!
+            </a>
           </Paragraph>
           <Divider />
           <LanguageTitle>

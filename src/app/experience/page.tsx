@@ -37,6 +37,10 @@ export default function Experience() {
               <strong>Flutter</strong>.
             </Paragraph>
             <Paragraph>
+              - Microfrontends utilizando <strong>Flutter</strong>, facilitando
+              a manutenção e reutilização de código.
+            </Paragraph>
+            <Paragraph>
               - Gerenciamento de estado utilizando <strong>Bloc</strong> e{' '}
               <strong>GetX</strong>.
             </Paragraph>
@@ -101,9 +105,14 @@ export default function Experience() {
           </m.p>
           <Items date="2015-12-01">
             <Item>
-              <Title>UNIPAR</Title>
+              <Title>UNIPAR(Universidade Paranaense)</Title>
             </Item>
             <Paragraph>- Análise e Desenvolvimento de Sistemas</Paragraph>
+            <Paragraph>- Workshop de Java, Android Nativo e PHP</Paragraph>
+            <Paragraph>
+              - TCC - Sistema de Gerenciamento de matriculas, frequência e
+              promissórias para uma escola de natação. (Delphi, Firebird)
+            </Paragraph>
           </Items>
           <Items date="2021-01-01">
             <Item>

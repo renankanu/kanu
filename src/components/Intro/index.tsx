@@ -1,3 +1,4 @@
+import IntroIdiom from './IntroIdiom'
 import IntroImage from './IntroImage'
 import IntroSocialMedia from './IntroSocialMedia'
 import IntroTechStack from './IntroTechStack'
@@ -14,6 +15,7 @@ export default function Intro() {
           <div className="flex flex-col content-center">
             <IntroTitle />
             <IntroSocialMedia />
+            <IntroIdiom />
             <IntroTechStack />
           </div>
           <div className="flex flex-row justify-center sm:hidden md:hidden">
